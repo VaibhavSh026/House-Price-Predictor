@@ -4,11 +4,9 @@ import numpy as np
 import pandas as pd
 import logging
 
-# Configure logging
 logging.basicConfig(filename="app.log", level=logging.INFO, 
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
-# Load the trained model
 try:
     with open("house_price_model.pkl", "rb") as file:
         model = pickle.load(file)
@@ -17,7 +15,6 @@ except Exception as e:
     logging.error(f"Error loading model: {e}")
     raise
 
-# List of all features the model was trained on
 FEATURES = ['MSSubClass', 'LotArea', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
             'BsmtFinSF2', 'TotalBsmtSF', 'MSZoning_FV', 'MSZoning_RH', 'MSZoning_RL',
             'MSZoning_RM', 'LotConfig_CulDSac', 'LotConfig_FR2', 'LotConfig_FR3',
@@ -28,8 +25,11 @@ FEATURES = ['MSSubClass', 'LotArea', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
             'Exterior1st_Plywood', 'Exterior1st_Stone', 'Exterior1st_Stucco',
             'Exterior1st_VinylSd', 'Exterior1st_Wd Sdng', 'Exterior1st_WdShing']
 
-# Initialize Flask app
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return jsonify({"message": "House Price Prediction API is running!"})
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -42,18 +42,14 @@ def predict():
 
         logging.info(f"Received request: {data}")
 
-        # Convert input to DataFrame
         input_data = pd.DataFrame([data])
 
-        # Add missing features with value 0
         for feature in FEATURES:
             if feature not in input_data.columns:
                 input_data[feature] = 0
 
-        # Ensure feature order matches model training
         input_data = input_data[FEATURES]
 
-        # Make prediction
         prediction = model.predict(input_data)[0]
 
         response = {"predicted_price": round(prediction, 2)}
@@ -65,6 +61,5 @@ def predict():
         logging.error(f"Error in prediction: {e}")
         return jsonify({"error": str(e)}), 500
 
-# Run the app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
