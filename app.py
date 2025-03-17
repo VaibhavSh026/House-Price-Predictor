@@ -38,12 +38,10 @@ from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 import pandas as pd
-import logging
 
-# Configure logging
-logging.basicConfig(filename="app.log", level=logging.INFO, 
-                    format="%(asctime)s - %(levelname)s - %(message)s")
+app = Flask(__name__)
 
+<<<<<<< HEAD
 # Load the model
 try:
     with open("house_price_model.pkl", "rb") as file:
@@ -57,6 +55,11 @@ except Exception as e:
 app = Flask(__name__)
 
 # Define feature columns expected by the model
+=======
+with open("house_price_model.pkl", "rb") as file:
+    model = pickle.load(file)
+
+>>>>>>> 827dfea75f002f0bb37a4710a60242e0922b6722
 FEATURES = ['MSSubClass', 'LotArea', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
             'BsmtFinSF2', 'TotalBsmtSF', 'MSZoning_FV', 'MSZoning_RH', 'MSZoning_RL',
             'MSZoning_RM', 'LotConfig_CulDSac', 'LotConfig_FR2', 'LotConfig_FR3',
@@ -67,10 +70,13 @@ FEATURES = ['MSSubClass', 'LotArea', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
             'Exterior1st_Plywood', 'Exterior1st_Stone', 'Exterior1st_Stucco',
             'Exterior1st_VinylSd', 'Exterior1st_Wd Sdng', 'Exterior1st_WdShing']
 
+<<<<<<< HEAD
 @app.route("/")
 def home():
     return jsonify({"message": "House Price Prediction API is running!"})
 
+=======
+>>>>>>> 827dfea75f002f0bb37a4710a60242e0922b6722
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
@@ -78,10 +84,8 @@ def predict():
         if not data:
             return jsonify({"error": "Empty request body"}), 400
 
-        logging.info(f"Received request: {data}")
-
-        # Convert input to DataFrame
         input_data = pd.DataFrame([data])
+<<<<<<< HEAD
 
         # Ensure all expected features are present
         for feature in FEATURES:
@@ -89,10 +93,15 @@ def predict():
                 input_data[feature] = 0
 
         # Keep only relevant features
+=======
+        for feature in FEATURES:
+            if feature not in input_data.columns:
+                input_data[feature] = 0
+>>>>>>> 827dfea75f002f0bb37a4710a60242e0922b6722
         input_data = input_data[FEATURES]
-
-        # Make prediction
+        
         prediction = model.predict(input_data)[0]
+<<<<<<< HEAD
 
         return jsonify({"predicted_price": round(prediction, 2)})
     
@@ -102,3 +111,12 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+=======
+        return jsonify({"predicted_price": round(prediction, 2)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == "__main__":
+    app.run(debug=True)
+ssdda
+>>>>>>> 827dfea75f002f0bb37a4710a60242e0922b6722

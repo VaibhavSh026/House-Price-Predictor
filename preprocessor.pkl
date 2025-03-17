@@ -1,5 +1,0 @@
-import pickle
-
-# Assuming 'preprocessor' is the fitted transformer used for encoding & scaling
-with open("preprocessor.pkl", "wb") as file:
-    pickle.dump(preprocessor, file)

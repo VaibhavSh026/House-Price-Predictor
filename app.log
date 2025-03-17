@@ -1,0 +1,32 @@
+2025-03-17 22:57:08,955 - INFO - Model loaded successfully.
+2025-03-17 22:57:08,980 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.2.29:5000
+2025-03-17 22:57:08,980 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 22:57:08,981 - INFO -  * Restarting with stat
+2025-03-17 22:57:10,616 - INFO - Model loaded successfully.
+2025-03-17 22:57:10,627 - WARNING -  * Debugger is active!
+2025-03-17 22:57:10,631 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 22:57:29,599 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkComm': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CBlock': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_ImStucc': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0}
+2025-03-17 22:57:29,628 - INFO - 127.0.0.1 - - [17/Mar/2025 22:57:29] "POST /predict HTTP/1.1" 200 -
+2025-03-17 22:57:32,473 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkComm': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CBlock': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_ImStucc': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0}
+2025-03-17 22:57:32,491 - INFO - 127.0.0.1 - - [17/Mar/2025 22:57:32] "POST /predict HTTP/1.1" 200 -
+2025-03-17 22:59:11,354 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkComm': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CBlock': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_ImStucc': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0}
+2025-03-17 22:59:11,414 - INFO - 127.0.0.1 - - [17/Mar/2025 22:59:11] "POST /predict HTTP/1.1" 200 -
+2025-03-17 23:09:07,963 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkComm': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CBlock': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_ImStucc': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0}
+2025-03-17 23:09:08,027 - INFO - 127.0.0.1 - - [17/Mar/2025 23:09:08] "POST /predict HTTP/1.1" 200 -
+2025-03-17 23:57:53,399 - INFO - Model loaded successfully.
+2025-03-17 23:57:53,505 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.55.131:5000
+2025-03-17 23:57:53,505 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 23:57:53,519 - INFO -  * Restarting with stat
+2025-03-17 23:57:57,736 - INFO - Model loaded successfully.
+2025-03-17 23:57:57,761 - WARNING -  * Debugger is active!
+2025-03-17 23:57:57,770 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 23:58:47,395 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkComm': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CBlock': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_ImStucc': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0}
+2025-03-17 23:58:47,493 - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "POST /predict HTTP/1.1" 200 -
+2025-03-18 00:11:51,388 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\app.py', reloading
+2025-03-18 00:11:51,930 - INFO -  * Restarting with stat
