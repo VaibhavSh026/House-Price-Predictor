@@ -1,0 +1,111 @@
+2025-03-17 17:25:35,415 - INFO - Model loaded successfully.
+2025-03-17 17:25:35,432 - WARNING -  * Debugger is active!
+2025-03-17 17:25:35,437 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:25:59,514 - INFO - Model loaded successfully.
+2025-03-17 17:25:59,537 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-17 17:25:59,537 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 17:25:59,539 - INFO -  * Restarting with stat
+2025-03-17 17:26:01,164 - INFO - Model loaded successfully.
+2025-03-17 17:26:01,174 - WARNING -  * Debugger is active!
+2025-03-17 17:26:01,178 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:26:14,515 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'BldgType_1Fam': 1, 'BldgType_2fmCon': 0, 'BldgType_Duplex': 0, 'BldgType_Twnhs': 0, 'BldgType_TwnhsE': 0, 'Exterior1st_VinylSd': 1, 'Exterior1st_AsphShn': 0, 'Exterior1st_BrkFace': 0, 'Exterior1st_CemntBd': 0, 'Exterior1st_HdBoard': 0, 'Exterior1st_MetalSd': 0, 'Exterior1st_Plywood': 0, 'Exterior1st_Stone': 0, 'Exterior1st_Stucco': 0, 'Exterior1st_Wd Sdng': 0, 'Exterior1st_WdShing': 0, 'LotConfig_Corner': 0, 'LotConfig_CulDSac': 0, 'LotConfig_FR2': 0, 'LotConfig_FR3': 0, 'LotConfig_Inside': 1, 'MSZoning_A': 0, 'MSZoning_C': 0, 'MSZoning_FV': 0, 'MSZoning_RH': 0, 'MSZoning_RL': 1, 'MSZoning_RM': 0}
+2025-03-17 17:26:14,516 - ERROR - Error in prediction: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- BldgType_1Fam
+- LotConfig_Corner
+- MSZoning_A
+- MSZoning_C
+Feature names seen at fit time, yet now missing:
+- Exterior1st_BrkComm
+- Exterior1st_CBlock
+- Exterior1st_ImStucc
+
+2025-03-17 17:26:14,517 - INFO - 127.0.0.1 - - [17/Mar/2025 17:26:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-03-17 17:26:41,967 - INFO -  * Detected change in 'C:\\Users\\ASUS\\app.py', reloading
+2025-03-17 17:26:42,179 - INFO -  * Restarting with stat
+2025-03-17 17:27:53,615 - INFO - Model loaded successfully.
+2025-03-17 17:27:53,625 - WARNING -  * Debugger is active!
+2025-03-17 17:27:53,629 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:28:00,962 - INFO - Model loaded successfully.
+2025-03-17 17:28:00,982 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-17 17:28:00,982 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 17:28:00,983 - INFO -  * Restarting with stat
+2025-03-17 17:28:02,622 - INFO - Model loaded successfully.
+2025-03-17 17:28:02,633 - WARNING -  * Debugger is active!
+2025-03-17 17:28:02,637 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:28:20,456 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_RL': 1}
+2025-03-17 17:28:20,457 - ERROR - Error in prediction: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- BldgType_2fmCon
+- BldgType_Duplex
+- BldgType_Twnhs
+- BldgType_TwnhsE
+- Exterior1st_AsphShn
+- ...
+
+2025-03-17 17:28:20,457 - INFO - 127.0.0.1 - - [17/Mar/2025 17:28:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-03-17 17:29:23,450 - INFO -  * Detected change in 'C:\\Users\\ASUS\\app.py', reloading
+2025-03-17 17:29:23,631 - INFO -  * Restarting with stat
+2025-03-17 17:29:25,588 - INFO - Model loaded successfully.
+2025-03-17 17:29:25,601 - WARNING -  * Debugger is active!
+2025-03-17 17:29:25,606 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:29:38,906 - INFO - Model loaded successfully.
+2025-03-17 17:29:38,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-17 17:29:38,926 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 17:29:38,927 - INFO -  * Restarting with stat
+2025-03-17 17:29:40,511 - INFO - Model loaded successfully.
+2025-03-17 17:29:40,523 - WARNING -  * Debugger is active!
+2025-03-17 17:29:40,528 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 17:29:54,151 - INFO - Received request: {'MSSubClass': 60, 'LotArea': 8450, 'OverallCond': 5, 'YearBuilt': 2003, 'YearRemodAdd': 2003, 'BsmtFinSF2': 0, 'TotalBsmtSF': 856, 'MSZoning_RL': 1}
+2025-03-17 17:29:54,197 - INFO - Prediction successful: {'predicted_price': np.float64(282061.29)}
+2025-03-17 17:29:54,197 - INFO - 127.0.0.1 - - [17/Mar/2025 17:29:54] "POST /predict HTTP/1.1" 200 -
+2025-03-17 18:04:42,722 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\app.py', reloading
+2025-03-17 18:04:43,154 - INFO -  * Restarting with stat
+2025-03-17 18:04:46,034 - INFO - Model loaded successfully.
+2025-03-17 18:04:46,051 - WARNING -  * Debugger is active!
+2025-03-17 18:04:46,055 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:14:54,504 - INFO - Model loaded successfully.
+2025-03-17 18:14:54,525 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-17 18:14:54,526 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-17 18:14:54,527 - INFO -  * Restarting with stat
+2025-03-17 18:14:56,289 - INFO - Model loaded successfully.
+2025-03-17 18:14:56,300 - WARNING -  * Debugger is active!
+2025-03-17 18:14:56,305 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:20:19,011 - INFO -  * Detected change in 'C:\\Users\\ASUS\\.ipynb_checkpoints\\app-checkpoint.py', reloading
+2025-03-17 18:20:19,216 - INFO -  * Restarting with stat
+2025-03-17 18:20:20,910 - INFO - Model loaded successfully.
+2025-03-17 18:20:20,920 - WARNING -  * Debugger is active!
+2025-03-17 18:20:20,924 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:22:08,298 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\app.py', reloading
+2025-03-17 18:22:08,469 - INFO -  * Restarting with stat
+2025-03-17 18:22:10,633 - INFO - Model loaded successfully.
+2025-03-17 18:22:10,644 - WARNING -  * Debugger is active!
+2025-03-17 18:22:10,648 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:22:17,234 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\House-Price-Predictor\\app.py', reloading
+2025-03-17 18:22:17,607 - INFO -  * Restarting with stat
+2025-03-17 18:22:20,803 - INFO - Model loaded successfully.
+2025-03-17 18:22:20,838 - WARNING -  * Debugger is active!
+2025-03-17 18:22:20,851 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:22:37,788 - INFO -  * Detected change in 'C:\\Users\\ASUS\\.ipynb_checkpoints\\app-checkpoint.py', reloading
+2025-03-17 18:22:38,003 - INFO -  * Restarting with stat
+2025-03-17 18:22:39,765 - INFO - Model loaded successfully.
+2025-03-17 18:22:39,777 - WARNING -  * Debugger is active!
+2025-03-17 18:22:39,781 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:26:41,049 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\app.py', reloading
+2025-03-17 18:26:41,466 - INFO -  * Restarting with stat
+2025-03-17 18:26:45,629 - INFO - Model loaded successfully.
+2025-03-17 18:26:45,657 - WARNING -  * Debugger is active!
+2025-03-17 18:26:45,667 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:27:59,032 - INFO -  * Detected change in 'C:\\Users\\ASUS\\house-price-predictor\\app.py', reloading
+2025-03-17 18:27:59,369 - INFO -  * Restarting with stat
+2025-03-17 18:28:03,412 - INFO - Model loaded successfully.
+2025-03-17 18:28:03,436 - WARNING -  * Debugger is active!
+2025-03-17 18:28:03,445 - INFO -  * Debugger PIN: 838-524-504
+2025-03-17 18:36:16,691 - INFO -  * Detected change in 'C:\\Users\\ASUS\\app.py', reloading
+2025-03-17 18:36:17,131 - INFO -  * Restarting with stat
+2025-03-17 20:13:39,113 - INFO -  * Restarting with stat
+2025-03-17 20:14:12,150 - INFO -  * Restarting with stat
