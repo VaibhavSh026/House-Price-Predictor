@@ -40,11 +40,10 @@ import numpy as np
 import pandas as pd
 import logging
 
-# Configure logging
-logging.basicConfig(filename="app.log", level=logging.INFO, 
-                    format="%(asctime)s - %(levelname)s - %(message)s")
+app = Flask(__name__)
 
-# Load the model
+logging.basicConfig(level=logging.INFO)
+
 try:
     with open("house_price_model.pkl", "rb") as file:
         model = pickle.load(file)
@@ -53,10 +52,6 @@ except Exception as e:
     logging.error(f"Error loading model: {e}")
     raise
 
-# Initialize Flask app
-app = Flask(__name__)
-
-# Define feature columns expected by the model
 FEATURES = ['MSSubClass', 'LotArea', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
             'BsmtFinSF2', 'TotalBsmtSF', 'MSZoning_FV', 'MSZoning_RH', 'MSZoning_RL',
             'MSZoning_RM', 'LotConfig_CulDSac', 'LotConfig_FR2', 'LotConfig_FR3',
@@ -78,20 +73,14 @@ def predict():
         if not data:
             return jsonify({"error": "Empty request body"}), 400
 
-        logging.info(f"Received request: {data}")
-
-        # Convert input to DataFrame
         input_data = pd.DataFrame([data])
 
-        # Ensure all expected features are present
         for feature in FEATURES:
             if feature not in input_data.columns:
                 input_data[feature] = 0
 
-        # Keep only relevant features
         input_data = input_data[FEATURES]
-
-        # Make prediction
+        
         prediction = model.predict(input_data)[0]
 
         return jsonify({"predicted_price": round(prediction, 2)})
